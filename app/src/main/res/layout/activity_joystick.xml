@@ -1,0 +1,145 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/colorBackground"
+             tools:context="com.binitshah.rosjoystick.JoystickActivity">
+
+    <FrameLayout android:id="@+id/fullscreen_content"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:keepScreenOn="true">
+
+        <ImageView android:layout_width="60dp"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitCenter"
+                   android:src="@drawable/a"
+                   android:layout_gravity="end"
+                   android:layout_marginTop="150dp"
+                   android:layout_marginRight="100dp"/>
+
+        <ImageView android:layout_width="60dp"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitCenter"
+                   android:src="@drawable/b"
+                   android:layout_gravity="end"
+                   android:layout_marginTop="100dp"
+                   android:layout_marginRight="50dp"/>
+
+        <ImageView android:layout_width="60dp"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitCenter"
+                   android:src="@drawable/x"
+                   android:layout_gravity="end"
+                   android:layout_marginTop="100dp"
+                   android:layout_marginRight="150dp"/>
+
+        <ImageView android:layout_width="60dp"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitCenter"
+                   android:src="@drawable/y"
+                   android:layout_gravity="end"
+                   android:layout_marginTop="50dp"
+                   android:layout_marginRight="100dp"/>
+
+        <ImageView android:layout_width="60dp"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitCenter"
+                   android:src="@drawable/back_alt"
+                   android:layout_gravity="start"
+                   android:layout_marginTop="80dp"
+                   android:layout_marginLeft="235dp"/>
+
+        <ImageView android:layout_width="60dp"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitCenter"
+                   android:src="@drawable/start_alt"
+                   android:layout_gravity="end"
+                   android:layout_marginTop="80dp"
+                   android:layout_marginRight="255dp"/>
+
+        <ImageView android:layout_width="60dp"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitCenter"
+                   android:src="@drawable/left_button"
+                   android:layout_gravity="start"
+                   android:layout_marginTop="30dp"
+                   android:layout_marginLeft="135dp"/>
+
+        <ImageView android:layout_width="60dp"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitCenter"
+                   android:src="@drawable/left_trigger"
+                   android:layout_gravity="start"
+                   android:layout_marginTop="-10dp"
+                   android:layout_marginLeft="135dp"/>
+
+        <ImageView android:layout_width="60dp"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitCenter"
+                   android:src="@drawable/right_button"
+                   android:layout_gravity="end"
+                   android:layout_marginTop="30dp"
+                   android:layout_marginRight="155dp"/>
+
+        <ImageView android:layout_width="60dp"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitCenter"
+                   android:src="@drawable/right_trigger"
+                   android:layout_gravity="end"
+                   android:layout_marginTop="-10dp"
+                   android:layout_marginRight="155dp"/>
+
+
+        <ImageView android:layout_width="100dp"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitCenter"
+                   android:src="@drawable/right_stick"
+                   android:layout_gravity="end"
+                   android:layout_marginTop="230dp"
+                   android:layout_marginRight="200dp"/>
+
+        <ImageView android:layout_width="100dp"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitCenter"
+                   android:src="@drawable/left_stick"
+                   android:layout_gravity="start"
+                   android:layout_marginTop="100dp"
+                   android:layout_marginLeft="50dp"/>
+
+        <ImageView android:layout_width="130dp"
+                   android:layout_height="130dp"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/dpad"
+                   android:layout_gravity="start"
+                   android:layout_marginTop="213dp"
+                   android:layout_marginLeft="155dp"/>
+
+    </FrameLayout>
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:fitsSystemWindows="true">
+
+        <LinearLayout android:id="@+id/fullscreen_content_controls"
+                      style="?metaButtonBarStyle"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="bottom|center_horizontal"
+                      android:background="@color/colorAccent"
+                      android:orientation="horizontal"
+                      tools:ignore="UselessParent">
+
+            <Button android:id="@+id/dummy_button"
+                    style="?metaButtonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
